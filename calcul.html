@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcul.css">
+    
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculatrice">
+            <div class="screen">  
+                <input type="text" id="input" disabled>
+             </div> 
+           <div class="bodycalcul">
+                <ul class="numbers">
+                    <li value="7" onclick="calcul(this)">7</li>
+                    <li value="8" onclick="calcul(this)">8</li>
+                    <li value="9" onclick="calcul(this)">9</li>
+                    <li value="4" onclick="calcul(this)">4</li>
+                    <li value="5" onclick="calcul(this)">5</li>
+                    <li value="6" onclick="calcul(this)">6</li>
+                    <li value="1" onclick="calcul(this)">1</li>
+                    <li value="2" onclick="calcul(this)">2</li>
+                    <li value="3" onclick="calcul(this)">3</li>
+                </ul>
+                <ul class="operator">
+                    <li value="ac" onclick="backtozero()">AC</li>
+                    <li value="/"  id="division" onclick="btndiv()">/</li>
+                    <li value="*"  id="multiple" onclick="btnmult()">x</li>
+                    <li value="-"  id="subtraction" onclick="btnsub()">-</li>
+                    <li value="+"  id="addition" onclick="btnadd()">+</li>
+                    <li value="=" onclick="result()">=</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="calcul.js"></script>
+</body>
+</html>
